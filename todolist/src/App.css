@@ -1,0 +1,119 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ayer, .hoy, .mañana {
+  border: 0.5vh solid #333;
+  border-radius: 2vh;
+  overflow: hidden;
+}
+
+.fecha{
+  padding: 1vh 0.5vh;
+}
+
+.tarea{
+  border-top: #333 0.5vh solid;
+}
+
+.btnEliminar{
+  color: rgb(175, 25, 25);
+}
+
+.btnEditar{
+  color: rgb(121, 157, 163);
+}
+
+.tareasCont{
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+}
+
+.tituloYBotones{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2vw;
+}
+
+.titulo{
+  margin-right: 0 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botonesCont{
+  display: flex;
+  margin-left: 0 2vw;
+}
+
+.btnEditar{
+  font-size: 3vw;
+  margin: 0 1vh;
+}
+
+.btnEliminar{
+  font-size: 3vw;
+}
+
+.labelTareas{
+  transition: all 0.3s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 25vw;
+  min-height: 25vh;
+  padding: 2vw;
+  top: 10vh;
+  left: 33vw;
+  border-radius: 2vh;
+  border: #333 solid 0.5vh;
+  background-image: linear-gradient(to left,#eee,#fff)
+}
+
+.tareaLabelcont{
+  display: flex;
+  flex-direction: column;
+}
+
+.descripcionLabel{
+  min-width: 15vw;
+  min-height: 10vh;
+  padding: 1vh;
+  border-top: #333 solid 0.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+}
+
+.tituloLabel{
+  padding: 1vh;
+  min-width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+}
+
+.botonesContLabel{
+  display: flex;
+  margin: 0 2vw;
+  justify-content: center;
+
+
+}
+
+.iconLabel{
+  font-size: 4vh;
+  padding: 0 1vh;
+}
+
+
+

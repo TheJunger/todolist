@@ -1,0 +1,421 @@
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 99vh;
+    background-color: #ccc;
+}
+
+*{
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vh solid #222;
+    padding: 1vh;
+    width: 25vw;
+    max-height: 75vh;
+    border-radius: 1vh;
+    background-color: #fff;
+}
+
+.botonesCont{
+    display: flex;
+}
+
+.botonesCont div{
+    display: flex;
+    font-size: 3.5vh;
+    padding: 0 0.5vh;
+}
+
+.botonesCont div i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnModificar{
+    color: rgb(121, 157, 163);
+}
+
+.btnEliminar{
+    color: rgb(175, 25, 25);
+  }
+
+  .btnCompletar{
+    color: green;
+  }
+
+.listName{
+    padding: 2vh 2vh;
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+	transition: all 0.3s;
+}
+
+.listCont *{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.addNewTaskCont{
+    display: flex;
+    padding: 0.5vh 1vh;
+    min-width: 20vw;
+    justify-content: center;
+    border: 1px solid #929292;
+    min-height: 5vh;
+    margin: 0.5vh 0;
+    border-radius: 1vh;
+    background-color: #fff;
+    transition: all 0.2s;
+    max-height: 100%;
+}
+
+.addNewTask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #666666;
+    background-color: #fff;
+}
+
+.addNewTaskCont:hover{
+    transform: scale(1.03);
+}
+
+select{
+    background-color: rgb(218, 250, 250);
+    border-radius: 1vh 1vh 0 0;
+}
+
+.selector{
+    background-color: #fff;
+}
+
+.selector{
+    font-size: 2.8vh;
+}
+
+.tarea{
+    display: flex;
+    padding: 0.5vh 1vh;
+    min-width: 20vw;
+    justify-content: space-between;
+    border: 1px solid #929292;
+    min-height: 5vh;
+    margin: 0.5vh 0;
+    border-radius: 1vh;
+    background-color: #fff;
+    transition: all 0.2s;
+    max-height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.tareasCont{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.tarea:hover{
+    position: sticky;
+    transform: scale(1.03);
+}
+
+.titulo{
+    max-width: 80%;
+    font-size: 3vh;
+    transition: all 0.3s;
+}
+
+.labelContMaster{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelCont{
+    position: absolute;
+    min-width: 29vw;
+    min-height: 29vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    border: 0.5vh solid black;
+    border-radius: 2vh;
+}
+
+.cerrarLabel{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0.2vh solid #222;
+    border-radius: 1vh;
+    padding: 0.5vh 2vh;
+    padding-bottom: 1vh;
+    margin-top: 2vh;
+    transition: all 0.2s;
+}
+
+.cerrarLabel:hover{
+    border: 0.2vh solid #000;
+    background-color: #ddd;
+}
+
+.continaerLabelText{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    min-height: 25vh;
+}
+
+.tituloContLabel{
+    display: flex;
+    justify-content: space-between;}
+
+.descContLabel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tituloLabel{
+    font-size: 4vh;
+    padding: 1vh;
+    border-bottom: 0.5vh solid #222;
+    width: 100%;
+    max-width: 100%;
+}
+
+.descLabel{
+    font-size: 3vh;
+    margin-top: 1vh;
+    padding: 1vh;
+    border: 0.2vh solid #222;
+    width: 100%;
+    min-height: 15vh;
+    border-radius: 1vh;
+}
+
+.fa-circle-xmark{
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+
+.listIcon{
+    font-size: 4vh;
+    display: flex;
+    
+}
+
+.listCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    background-color: rgb(181, 238, 238);
+    border-radius: 1vh;
+    overflow: hidden;
+}
+
+.alertDel{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: red;
+}
+
+
+
+
+.menuCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    position: absolute;
+    top: 33vh;
+    min-width: 24vw;
+    background-color: antiquewhite;
+}
+
+.menuCont div{
+    font-size: 3vh;
+    padding: 0.8vh 0;
+}
+
+
+
+.editTareaLabelMaster{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.editTareaLabelTapador{
+    background-color: #000;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.9);
+}
+
+.editLabelContainer{
+    background-color: #eee;
+    padding: 2vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    border-radius: 1vh;
+}
+
+.editLabelContainer *{
+    margin: 0.5vh;
+}
+
+.editTareaLabel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+
+}
+
+.literralyJustABar, .literallyJustABar{
+    border-bottom: 0.3vh solid #000;
+    margin: 1vh 0;
+    width: 100%;
+}
+
+.nuevoTitulo{
+    padding: 1vh;
+    font-size: 2.5vh;
+}
+
+.nuevaDescripcion{
+    padding: 1vh;
+    font-size: 2.2vh;
+    min-height: 8vh;
+}
+
+.editTareaBotonesLabel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editTareaBotonesLabel input{
+    padding: 1vh 2vh;
+}
+
+.cancelEditTareaButtonLabel{
+    background-color: rgb(248, 80, 80);
+    font-weight: bolder;
+    color: #fff;
+    transition: transform 0.3s;
+    border-radius: 0.5vh;
+}
+
+.acceptEditTareaButtonLabel{
+    transition: all 0.3s;
+    border-radius: 0.5vh;
+}
+
+.cancelEditTareaButtonLabel:hover{
+    transform: scale(1.1);
+}
+
+.acceptEditTareaButtonLabel:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 1vh rgb(0, 255, 0), 0 0 2vh rgb(170, 255, 170);;
+}
+
+
+
+.delTaskContMaster{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delTaskCont{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 2vh;
+    border: 0.5vh solid #222;
+    border-radius: 1vh;
+}
+
+.delTaskBtnCont{
+    margin-top: 4.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.delTaskTitle{
+    font-size: 3vh;
+}
+
+.delTaskBtnCont input{
+    margin: 0 1vh;
+    padding: 0.8vh 2vh;
+    font-size: 2.5vh;
+}
+
+.delTaskDel{
+    background-color: rgb(248, 80, 80);
+    font-weight: bolder;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.delTaskDel:hover{
+    background-color: rgb(211, 43, 43);
+}
+
+.complete{
+    background-color: #dddddd;
+    color: #666666;
+}
+
+.complete > .titulo {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.5vh;
+    text-decoration-color: rgb(70, 136, 70);
+}
